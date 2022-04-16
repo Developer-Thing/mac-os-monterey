@@ -1,0 +1,30 @@
+<div class="login-screen">
+  <img src="assets/images/golf-ball.png"
+    alt="golf-ball"
+    class="login-screen__logo">
+
+  <h3 class="login-screen__username">Developer Thing</h3>
+
+  <div class="login-screen__input">
+    <div class="p-input-icon-right">
+      <i class="pi pi-arrow-circle-right" *ngIf="password.value"></i>
+      <input
+        #password
+        (keyup.enter)="openDesktop()"
+        autofocus
+        pInputText
+        autocomplete="off"
+        class="p-inputtext-sm"
+        placeholder="Enter password"
+        type="password">
+    </div>
+  </div>
+
+  <div class="login-screen__password-hint">
+    Touch ID or enter password
+  </div>
+
+  <div class="login-screen__machine-controls">
+    <app-machine-controls></app-machine-controls>
+  </div>
+</div>

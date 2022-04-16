@@ -1,0 +1,26 @@
+@import 'helpers';
+
+.sidebar-item {
+  @include flex($ai: center);
+
+  overflow-x: hidden;
+
+  &__title {
+    font-size: 0.7rem;
+    cursor: default;
+    user-select: none;
+  }
+
+  &__image {
+    width: 0.9rem;
+    margin: 0.3rem;
+    margin-right: 0.5rem;
+    filter: contrast(0.1);
+  }
+
+  &__icon {
+    font-size: 0.9rem;
+    margin: 0.3rem;
+    margin-right: 0.5rem;
+  }
+}

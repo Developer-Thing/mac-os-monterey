@@ -1,0 +1,20 @@
+<div class="dialog-header">
+  <div class="dialog-header__controls">
+    <app-dialog-controls></app-dialog-controls>
+  </div>
+
+  <div class="dialog-header__title">
+    <img
+      src="assets/images/library.png"
+      alt="library"
+      class="mr-1"
+      width="20"
+    >
+    <span class="font-bold">developer-thing --bash --120x24</span>
+  </div>
+</div>
+
+<p-terminal
+  [prompt]="'developer-thing $'"
+  [welcomeMessage]="'Available commands: framework, author, ui'"
+></p-terminal>

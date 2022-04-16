@@ -1,0 +1,16 @@
+@import '_helpers';
+
+.desktop-screen {
+    @include bg-image($uri: '/assets/images/desktop-background.jpg', $size: cover, $position: center);
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+::ng-deep.p-sidebar {
+    @include bg-image($uri: '/assets/images/desktop-background.jpg', $size: cover, $position: center);
+
+    color: #495057;
+    border: 0 none;
+    box-shadow: none;
+}

@@ -1,0 +1,19 @@
+<div class="search-container">
+  <p-autoComplete
+    (onSelect)="onAppSelected($event)"
+    [suggestions]="results"
+    (completeMethod)="onSearch($event)"
+    [autofocus]="true"
+    [placeholder]="'Spotlight Search'"
+    styleClass="spotlight-search">
+    <ng-template let-app pTemplate="item">
+      <div class="spotlight-result">
+        <img
+          class="spotlight-result__icon"
+          [src]="'assets/images/' + app + '.png'"
+          [alt]="app">
+        <span class="spotlight-result__title">{{ app }}</span>
+      </div>
+    </ng-template>
+  </p-autoComplete>
+</div>

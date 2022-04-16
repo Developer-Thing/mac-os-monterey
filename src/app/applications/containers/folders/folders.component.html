@@ -1,0 +1,9 @@
+<div class="folders">
+  <div class="folders__icon" *ngFor="let folder of folders">
+    <app-folder-icon
+      [folder]="folder"
+      (click)="onFolderSelected($event)"
+      [isFinderOpened]="isFinderOpened">
+    </app-folder-icon>
+  </div>
+</div>

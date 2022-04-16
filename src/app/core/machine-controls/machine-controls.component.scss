@@ -1,0 +1,25 @@
+@import 'helpers';
+
+.machine-controls {
+    @include flex($ai: center, $jc: space-between);
+
+    width: 200px;
+
+    &__item {
+        @include flex($dir: column, $ai: center);
+
+        i {
+            color: var(--mac-grey);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid var(--mac-grey);
+            background-color: var(--purple-0);
+            border-radius: 50%;
+        }
+
+        span {
+            font-size: 0.6rem;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import 'helpers';
+
+.dialog-header {
+    @include flex($ai: center, $jc: space-between);
+
+    background: var(--light-1);
+
+    &__controls {
+        padding: 0.5rem;
+    }
+
+    &__title {
+        @include flex($ai: center, $jc: center);
+
+        flex-grow: 1;
+    }
+}

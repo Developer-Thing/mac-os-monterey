@@ -1,0 +1,13 @@
+<div class="launchpad">
+  <div
+    *ngFor="let app of apps"
+    class="launchpad__item">
+
+    <img
+      [src]="'assets/images/' + app + '.png'"
+      [width]="100"
+      [alt]="app"/>
+
+      <span style="text-transform: capitalize;">{{ app }}</span>
+  </div>
+</div>

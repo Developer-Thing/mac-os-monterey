@@ -1,0 +1,10 @@
+<p-dock
+  position="bottom"
+  [model]="dockItems">
+  <ng-template pTemplate="item" let-item>
+    <img
+      [src]="'assets/images/' + item.icon + '.png'"
+      [alt]="item.label"
+      width="100%">
+  </ng-template>
+</p-dock>

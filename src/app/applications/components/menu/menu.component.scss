@@ -1,0 +1,34 @@
+@import '_helpers';
+
+:host::ng-deep {
+    .p-menubar {
+        padding: 0 0.5rem;
+        background-color: var(--purple-2);
+        color: var(--light-0);
+        border: none;
+        font-size: 0.8rem;
+
+        .p-menuitem {
+            &:first-child {
+                font-weight: bold;
+                padding: 0 1rem;
+            }
+
+            .p-menuitem-link {
+                padding: 0.5rem 0.75rem;
+
+                .p-menuitem-text {
+                    color: var(--light-0);
+                }
+            }
+        }
+
+        .p-menubar-end {
+            @include flex($ai: center);
+
+            i {
+                padding: 0 0.75rem;
+            }
+        }
+    }
+}

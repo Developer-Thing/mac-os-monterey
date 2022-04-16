@@ -1,0 +1,42 @@
+@import 'helpers';
+
+.folder-icon {
+  @include flex($dir: column, $ai: center);
+
+  width: 100px;
+  margin-bottom: 5px;
+
+  &__image {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2px;
+
+    @include bg-image($uri: '/assets/images/folder.png', $size: cover, $position: center);
+
+    &.selected {
+      background-color: var(--purple-1);
+      box-shadow: 0 0 1px 1px var(--mac-grey);
+      border-radius: 2px;
+
+      &.finder {
+        background-color: var(--mac-grey);
+      }
+    }
+  }
+
+  &__title {
+    @include font($size: 0.7rem, $weight: 400, $color: var(--light-0));
+
+    user-select: none;
+    padding: 1px;
+
+    &.finder {
+      color: var(--dark-1);
+    }
+
+    &.selected {
+      background-color: var(--blue-700);
+      color: var(--light-0);
+    }
+  }
+}

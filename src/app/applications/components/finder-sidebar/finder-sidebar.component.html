@@ -1,0 +1,12 @@
+<div class="finder-sidebar">
+  <div class="finder-sidebar__controls">
+    <app-dialog-controls></app-dialog-controls>
+  </div>
+
+  <div class="finder-sidebar__groups">
+    <app-sidebar-group
+      [sidebarGroup]="sidebarGroup"
+      *ngFor="let sidebarGroup of sidebarGroups">
+    </app-sidebar-group>
+  </div>
+</div>

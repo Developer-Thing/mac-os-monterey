@@ -1,0 +1,23 @@
+<div #desktop class="desktop-screen" (click)="unselectFolders()">
+  <div class="desktop-screen__menu">
+    <app-menu (spotlightOpened)="openSpotlight()"></app-menu>
+  </div>
+
+  <div class="desktop-screen__folders">
+    <app-folders [folders]="(folders$ | async) || []"></app-folders>
+  </div>
+
+  <div class="desktop-screen__dock">
+    <app-dock
+      (launchpadOpened)="launchPadOpened = true">
+    </app-dock>
+  </div>
+</div>
+
+<app-context-menu [target]="desktop"></app-context-menu>
+
+<p-sidebar
+  [(visible)]="launchPadOpened"
+  [fullScreen]="true">
+  <app-launchpad></app-launchpad>
+</p-sidebar>

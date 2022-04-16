@@ -1,0 +1,23 @@
+::ng-deep.boot-screen {
+    background-color: var(--dark-0); 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        width: 60px;
+        margin-bottom: 80px;
+    }
+
+    &__progress-bar {
+        .p-progressbar {
+            background-color: var(--mac-grey);
+
+            .p-progressbar-value {
+                background-color: var(--light-0);
+            }
+        }
+    }
+}

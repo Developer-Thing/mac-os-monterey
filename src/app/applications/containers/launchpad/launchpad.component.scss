@@ -1,0 +1,15 @@
+@import '_helpers';
+
+.launchpad {
+    @include flex($wrap: wrap, $jc: center);
+
+    width: 80%;
+    margin: 0 auto;
+
+    &__item {
+        @include flex($dir: column, $ai: center, $jc: center);
+        @include font($size: 0.9rem, $weight: 300, $color: var(--light-0));
+
+        padding: 10px 40px;
+    }
+}

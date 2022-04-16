@@ -1,0 +1,47 @@
+@import 'helpers';
+
+:host::ng-deep.p-autocomplete {
+    width: 100%;
+
+    .p-autocomplete-items {
+        background-color: var(--mac-grey);
+        padding: 10px;
+
+        .p-autocomplete-item {
+            padding: 0.5rem;
+
+            &:hover {
+                background-color: var(--blue-700);
+                color: var(--light-0);
+            }
+        }
+    }
+
+    .p-inputtext {
+        width: 100%;
+        background-color: var(--mac-grey);
+        border: none;
+
+        &:enabled:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.search-container {
+    height: 200px;
+}
+
+.spotlight-result {
+    @include flex($ai: center);
+
+    &__title {
+        font-size: 0.8rem;
+    }
+
+    &__icon {
+        width: 1rem;
+        margin-right: 0.5rem;
+        user-select: none;
+    }
+}

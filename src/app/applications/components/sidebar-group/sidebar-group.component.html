@@ -1,0 +1,10 @@
+<div class="sidebar-group">
+  <div class="sidebar-group__title">
+    {{ sidebarGroup.category }}
+  </div>
+
+  <app-sidebar-item
+    *ngFor="let item of sidebarGroup.items"
+    [sidebarItem]="item">
+  </app-sidebar-item>
+</div>

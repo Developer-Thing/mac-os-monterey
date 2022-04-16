@@ -1,0 +1,15 @@
+<p-menubar
+  [model]="menuItems">
+
+  <ng-template pTemplate="start">
+    <i class="pi pi-apple"></i>
+  </ng-template>
+
+  <ng-template pTemplate="end">
+    <i class="pi pi-wifi"></i>
+    <i class="pi pi-mobile" style="transform: rotateZ(90deg);"></i>
+    <i class="pi pi-search" (click)="openSpotlight()"></i>
+    <app-clock></app-clock>
+  </ng-template>
+
+</p-menubar>
