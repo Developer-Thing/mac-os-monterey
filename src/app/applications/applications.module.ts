@@ -23,6 +23,7 @@ import {
   SidebarItemComponent
 } from './components';
 import { SharedModule } from '../shared/shared.module';
+import { SettingsModule } from './components/settings/settings.module';
 
 const components = [
   DesktopComponent,
@@ -48,7 +49,8 @@ const components = [
   imports: [
     CommonModule,
     ApplicationsRoutingModule,
-    SharedModule
+    SharedModule,
+    SettingsModule
   ]
 })
 export class ApplicationsModule { }
