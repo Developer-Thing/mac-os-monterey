@@ -38,6 +38,11 @@ export class DockComponent implements OnInit {
       .subscribe(count => this.updateTrashIcon(count))
   }
 
+  ngOnDestroy(): void {
+    this.onDestroy$.next(true);
+    this.onDestroy$.complete();
+  }
+
   getDockItems() {
     return dockItems.map(dockItem => {
       return {

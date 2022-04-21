@@ -24,7 +24,4 @@
 
 .context-menu {
   @include font($size: 0.8rem, $weight: 500);
-
-  background-color: var(mac-grey);
-  padding: 2px;
 }
