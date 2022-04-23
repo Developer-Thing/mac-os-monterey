@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=ha9LY12yVrk&list=PLy1_OqPhc1wnCOjZHR8E6bEHshGPdl
 
 Cloned apps: Menu, Finder, Trash, Terminal, Spotlight, Launchpad, Settings Menu, Login Screen, Boot Screen
 
-PrimeNg components used in this course
+PrimeNg components used in this course:
 Menubar, Dock, Dialog, DynamicDialog, Terminal, 
 ContextMenu, AutoComplete, ProgressBar, InputText
 
