@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedUiModule } from '../shared-ui/shared-ui.module';
-import { ClockComponent } from './components/clock/clock.component';
 
 import { DialogService, DynamicDialogRef, DynamicDialogConfig } from 'primeng/dynamicdialog';
 import { ContextMenuComponent } from './components/context-menu/context-menu.component';
@@ -9,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    ClockComponent,
     ContextMenuComponent
   ],
   imports: [
@@ -17,7 +15,6 @@ import { FormsModule } from '@angular/forms';
     SharedUiModule
   ],
   exports: [
-    ClockComponent,
     ContextMenuComponent,
     FormsModule,
     SharedUiModule

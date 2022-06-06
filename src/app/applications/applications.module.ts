@@ -24,6 +24,7 @@ import {
 } from './components';
 import { SharedModule } from '../shared/shared.module';
 import { SettingsModule } from './components/settings/settings.module';
+import { ClockComponent } from '../shared/components/clock/clock.component';
 
 const components = [
   DesktopComponent,
@@ -50,7 +51,8 @@ const components = [
     CommonModule,
     ApplicationsRoutingModule,
     SharedModule,
-    SettingsModule
+    SettingsModule,
+    ClockComponent
   ]
 })
 export class ApplicationsModule { }
