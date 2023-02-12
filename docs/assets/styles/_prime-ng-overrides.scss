@@ -1,0 +1,27 @@
+@import 'helpers';
+
+.p-terminal {
+  border: 0;
+}
+
+.p-dialog {
+  border-radius: 0.5rem;
+
+  .p-dialog-content {
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0;
+  }
+
+  &.spotlight {
+    box-shadow: none;
+
+    .p-dialog-content {
+      background-color: transparent;
+    }
+  }
+}
+
+.context-menu {
+  @include font($size: 0.8rem, $weight: 500);
+}
