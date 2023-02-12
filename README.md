@@ -1,6 +1,6 @@
 # Building a mac OS clone with Angular and PrimeNg
 
-Deployed application: https://monterey.world
+Deployed application: https://mac-os-clone.web.app
 
 Full youtube tutorials available here:
 https://www.youtube.com/watch?v=ha9LY12yVrk&list=PLy1_OqPhc1wnCOjZHR8E6bEHshGPdlpQM
