@@ -1,4 +1,4 @@
-# Building a macOS clone with Angular and PrimeNg
+# Building a mac OS clone with Angular and PrimeNg
 
 Deployed application: https://monterey.world
 
