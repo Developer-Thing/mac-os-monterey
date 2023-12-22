@@ -68,7 +68,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -99,10 +99,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mac-os-clone:build:production"
+              "buildTarget": "mac-os-clone:build:production"
             },
             "development": {
-              "browserTarget": "mac-os-clone:build:development"
+              "buildTarget": "mac-os-clone:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -110,7 +110,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mac-os-clone:build"
+            "buildTarget": "mac-os-clone:build"
           }
         },
         "test": {

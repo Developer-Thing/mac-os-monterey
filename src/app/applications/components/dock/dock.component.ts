@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { TooltipOptions } from 'primeng/tooltip';
+import { MenuItem, TooltipOptions } from 'primeng/api';
+
 import { Subject, takeUntil } from 'rxjs';
 import { LAUNCHPAD } from 'src/app/shared/config/applications';
 import { dockItems } from 'src/app/shared/config/dock-items';
@@ -29,7 +29,7 @@ export class DockComponent implements OnInit {
   constructor(
     private cd: ChangeDetectorRef,
     private store: Store
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.dockItems = this.getDockItems();
@@ -75,7 +75,7 @@ export class DockComponent implements OnInit {
           icon
         };
       });
-      this.cd.markForCheck();
+    this.cd.markForCheck();
   }
 
 }

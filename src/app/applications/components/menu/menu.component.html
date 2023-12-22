@@ -1,5 +1,4 @@
-<p-menubar
-  [model]="menuItems">
+<p-menubar [model]="menuItems">
 
   <ng-template pTemplate="start">
     <i class="pi pi-apple"></i>
@@ -7,21 +6,20 @@
 
   <ng-template pTemplate="end">
     <i class="pi pi-wifi"></i>
-    <i 
-      (click)="toggleSettingsDialog()"
-      class="pi pi-mobile" 
-      style="transform: rotateZ(90deg);"></i>
-    <i class="pi pi-search" (click)="openSpotlight()"></i>
+    <i (click)="toggleSettingsDialog()"
+       class="pi pi-mobile"
+       style="transform: rotateZ(90deg);"></i>
+    <i class="pi pi-search"
+       (click)="openSpotlight()"></i>
     <app-clock></app-clock>
   </ng-template>
 
 </p-menubar>
 
-<p-dialog 
-  styleClass="mt-5"
-  position="top-right"
-  [visible]="isSettingsDialogDisplayed"
-  [showHeader]="false">
+<p-dialog styleClass="mt-5"
+          position="topright"
+          [visible]="isSettingsDialogDisplayed"
+          [showHeader]="false">
   <ng-template pTemplate>
     <app-settings></app-settings>
   </ng-template>

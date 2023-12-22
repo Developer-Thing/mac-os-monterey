@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400&display=swap');
 
 * {
-    margin: 0;
+    //margin: 0;
     box-sizing: border-box;
     user-select: none;
     -webkit-user-select: none;
@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Yantramanav';
+    margin: 0;
 }
 
 .text-red {
