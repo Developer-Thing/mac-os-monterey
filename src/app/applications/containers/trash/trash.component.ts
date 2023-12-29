@@ -1,16 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Store } from 'src/app/shared/store/store';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { MyStore } from 'src/app/shared/store/my-store';
 
 @Component({
   selector: 'app-trash',
   templateUrl: './trash.component.html',
   styleUrls: ['./trash.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TrashComponent {
+  myStore = inject(MyStore);
 
-  folders$ = this.store.trashFolders$;
+  folders = this.myStore.trashFolders;
 
-  constructor(private store: Store) {}
-
+  constructor() {}
 }

@@ -1,36 +1,41 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { Store } from '../../store/store';
 
 @Component({
   selector: 'app-context-menu',
   templateUrl: './context-menu.component.html',
   styleUrls: ['./context-menu.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContextMenuComponent {
-
   @Input() target: any;
+
+  @Output() addNewFolder = new EventEmitter();
 
   items: MenuItem[] = [
     {
       label: 'New Folder',
-      command: () => this.store.addNewFolder()
+      command: () => this.addNewFolder.emit(),
     },
     {
-      label: 'Get Info'
+      label: 'Get Info',
     },
     {
-      label: 'Change Desktop Background...'
+      label: 'Change Desktop Background...',
     },
     {
-      label: 'Use Stacks'
+      label: 'Use Stacks',
     },
     {
-      label: 'Show View Options'
+      label: 'Show View Options',
     },
-  ]
+  ];
 
-  constructor(private store: Store) { }
-
+  constructor() {}
 }

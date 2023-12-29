@@ -19,6 +19,7 @@
     "@angular/platform-browser": "^17.0.8",
     "@angular/platform-browser-dynamic": "^17.0.8",
     "@angular/router": "^17.0.8",
+    "@ngrx/signals": "^17.0.1",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primeng": "^17.2.0",
@@ -38,6 +39,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "prettier": "3.1",
     "typescript": "~5.2.2"
   }
 }

@@ -3,9 +3,6 @@
     <app-finder-sidebar></app-finder-sidebar>
   </div>
   <div class="finder__content">
-    <app-folders
-      [isFinderOpened]="true"
-      [folders]="(folders$ | async) || []">
-    </app-folders>
+    <app-folders [isFinderOpened]="true" [folders]="folders()"> </app-folders>
   </div>
 </div>

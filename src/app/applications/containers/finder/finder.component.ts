@@ -1,16 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Store } from 'src/app/shared/store/store';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { MyStore } from 'src/app/shared/store/my-store';
 
 @Component({
   selector: 'app-finder',
   templateUrl: './finder.component.html',
   styleUrls: ['./finder.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FinderComponent {
+  myStore = inject(MyStore);
 
-  folders$ = this.store.tutorialFolders$;
-
-  constructor(private store: Store) { }
-
+  folders = this.myStore.tutorialFolders;
 }

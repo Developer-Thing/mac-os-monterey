@@ -4,20 +4,18 @@
   </div>
 
   <div class="desktop-screen__folders">
-    <app-folders [folders]="(folders$ | async) || []"></app-folders>
+    <app-folders [folders]="folders()"></app-folders>
   </div>
 
   <div class="desktop-screen__dock">
-    <app-dock
-      (launchpadOpened)="launchPadOpened = true">
-    </app-dock>
+    <app-dock (launchpadOpened)="launchPadOpened = true"> </app-dock>
   </div>
 </div>
 
-<app-context-menu [target]="desktop"></app-context-menu>
+<app-context-menu
+  (addNewFolder)="onAddNewFolder()"
+  [target]="desktop"></app-context-menu>
 
-<p-sidebar
-  [(visible)]="launchPadOpened"
-  [fullScreen]="true">
+<p-sidebar [(visible)]="launchPadOpened" [fullScreen]="true">
   <app-launchpad></app-launchpad>
 </p-sidebar>
