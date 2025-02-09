@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-launchpad',
-  templateUrl: './launchpad.component.html',
-  styleUrls: ['./launchpad.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-launchpad',
+    templateUrl: './launchpad.component.html',
+    styleUrls: ['./launchpad.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class LaunchpadComponent implements OnInit {
 

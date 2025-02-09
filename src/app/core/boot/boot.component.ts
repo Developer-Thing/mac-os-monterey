@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-boot',
-  templateUrl: './boot.component.html',
-  styleUrls: ['./boot.component.scss']
+    selector: 'app-boot',
+    templateUrl: './boot.component.html',
+    styleUrls: ['./boot.component.scss'],
+    standalone: false
 })
 export class BootComponent implements OnInit {
 

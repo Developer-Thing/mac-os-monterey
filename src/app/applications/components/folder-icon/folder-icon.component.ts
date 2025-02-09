@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 import { Folder } from 'src/app/shared/models/folder';
 
 @Component({
-  selector: 'app-folder-icon',
-  templateUrl: './folder-icon.component.html',
-  styleUrls: ['./folder-icon.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-folder-icon',
+    templateUrl: './folder-icon.component.html',
+    styleUrls: ['./folder-icon.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class FolderIconComponent {
 

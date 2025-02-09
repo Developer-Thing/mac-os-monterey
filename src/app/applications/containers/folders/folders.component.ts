@@ -9,10 +9,11 @@ import { FolderSelection } from 'src/app/shared/models/folder-selection';
 import { MyStore } from 'src/app/shared/store/my-store';
 
 @Component({
-  selector: 'app-folders',
-  templateUrl: './folders.component.html',
-  styleUrls: ['./folders.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-folders',
+    templateUrl: './folders.component.html',
+    styleUrls: ['./folders.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class FoldersComponent {
   myStore = inject(MyStore);

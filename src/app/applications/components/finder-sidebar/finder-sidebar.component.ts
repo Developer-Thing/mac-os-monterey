@@ -3,10 +3,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { SidebarGroup } from 'src/app/shared/models/sidebar-group';
 
 @Component({
-  selector: 'app-finder-sidebar',
-  templateUrl: './finder-sidebar.component.html',
-  styleUrls: ['./finder-sidebar.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-finder-sidebar',
+    templateUrl: './finder-sidebar.component.html',
+    styleUrls: ['./finder-sidebar.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class FinderSidebarComponent  {
 

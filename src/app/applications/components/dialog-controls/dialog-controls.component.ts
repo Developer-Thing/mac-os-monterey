@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DynamicDialogConfig, DynamicDialogRef } from 'primeng/dynamicdialog';
 
 @Component({
-  selector: 'app-dialog-controls',
-  templateUrl: './dialog-controls.component.html',
-  styleUrls: ['./dialog-controls.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-dialog-controls',
+    templateUrl: './dialog-controls.component.html',
+    styleUrls: ['./dialog-controls.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DialogControlsComponent implements OnInit {
 

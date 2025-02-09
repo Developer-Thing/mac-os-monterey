@@ -12,9 +12,10 @@ import { WindowService } from 'src/app/shared/services/window.service';
 import { MyStore } from 'src/app/shared/store/my-store';
 
 @Component({
-  selector: 'app-desktop',
-  templateUrl: './desktop.component.html',
-  styleUrls: ['./desktop.component.scss'],
+    selector: 'app-desktop',
+    templateUrl: './desktop.component.html',
+    styleUrls: ['./desktop.component.scss'],
+    standalone: false
 })
 export class DesktopComponent {
   myStore = inject(MyStore);

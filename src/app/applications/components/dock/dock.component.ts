@@ -16,10 +16,11 @@ import { dockItems } from 'src/app/shared/config/dock-items';
 import { MyStore } from 'src/app/shared/store/my-store';
 
 @Component({
-  selector: 'app-dock',
-  templateUrl: './dock.component.html',
-  styleUrls: ['./dock.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-dock',
+    templateUrl: './dock.component.html',
+    styleUrls: ['./dock.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DockComponent implements OnInit {
   @Output() launchpadOpened = new EventEmitter();

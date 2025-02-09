@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MyStore } from 'src/app/shared/store/my-store';
 
 @Component({
-  selector: 'app-trash',
-  templateUrl: './trash.component.html',
-  styleUrls: ['./trash.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-trash',
+    templateUrl: './trash.component.html',
+    styleUrls: ['./trash.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class TrashComponent {
   myStore = inject(MyStore);

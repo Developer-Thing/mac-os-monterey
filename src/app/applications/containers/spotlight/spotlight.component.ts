@@ -4,9 +4,10 @@ import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { dockItems } from 'src/app/shared/config/dock-items';
 
 @Component({
-  selector: 'app-spotlight',
-  templateUrl: './spotlight.component.html',
-  styleUrls: ['./spotlight.component.scss']
+    selector: 'app-spotlight',
+    templateUrl: './spotlight.component.html',
+    styleUrls: ['./spotlight.component.scss'],
+    standalone: false
 })
 export class SpotlightComponent {
 

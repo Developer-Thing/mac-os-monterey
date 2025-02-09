@@ -3,11 +3,12 @@ import { TerminalService } from 'primeng/terminal';
 import { TerminalCommand } from 'src/app/shared/config/terminal-command';
 
 @Component({
-  selector: 'app-terminal',
-  templateUrl: './terminal.component.html',
-  styleUrls: ['./terminal.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [TerminalService]
+    selector: 'app-terminal',
+    templateUrl: './terminal.component.html',
+    styleUrls: ['./terminal.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TerminalService],
+    standalone: false
 })
 export class TerminalComponent {
 
