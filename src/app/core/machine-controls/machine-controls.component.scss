@@ -1,4 +1,4 @@
-@import 'helpers';
+@use 'helpers' as *;
 
 .machine-controls {
     @include flex($ai: center, $jc: space-between);

@@ -1,4 +1,4 @@
-@import '_helpers';
+@use 'helpers' as *;
 
 .desktop-screen {
     @include bg-image($uri: '/assets/images/desktop-background.jpg', $size: cover, $position: center);

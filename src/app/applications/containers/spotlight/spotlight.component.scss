@@ -1,4 +1,4 @@
-@import 'helpers';
+@use 'helpers' as *;
 
 :host::ng-deep.p-autocomplete {
     width: 100%;

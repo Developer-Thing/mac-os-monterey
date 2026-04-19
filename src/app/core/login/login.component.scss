@@ -1,4 +1,4 @@
-@import 'helpers';
+@use 'helpers' as *;
 
 ::ng-deep.login-screen {
     @include bg-image($uri: '/assets/images/desktop-background.jpg', $size: cover, $position: center);

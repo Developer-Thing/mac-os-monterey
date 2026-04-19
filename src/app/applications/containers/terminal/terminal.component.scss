@@ -1,4 +1,4 @@
-@import 'helpers';
+@use 'helpers' as *;
 
 .dialog-header {
     @include flex($ai: center, $jc: space-between);

@@ -1,4 +1,4 @@
-@import '_helpers';
+@use 'helpers' as *;
 
 :host::ng-deep {
     .p-menubar {
