@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Type } from "@angular/core";
 import { DialogService, DynamicDialogConfig } from "primeng/dynamicdialog";
 import { Observable, throwError } from "rxjs";
 import * as apps from './../config/applications';
@@ -25,7 +25,7 @@ export class WindowService {
     return throwError(() => 'Could not find component to display');
   }
 
-  private findComponentByApplicationId(applicationId: string) {
+  private findComponentByApplicationId(applicationId: string): Type<any> | null {
     switch (applicationId) {
       case apps.TERMINAL: return appComponents.TerminalComponent;
       case apps.FINDER: return appComponents.FinderComponent;

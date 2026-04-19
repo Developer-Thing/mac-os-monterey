@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^19.1.5",
     "@angular/router": "^19.1.5",
     "@ngrx/signals": "^19.0.1",
+    "@primeuix/themes": "^2.0.3",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "primeng": "^19.0.6",
